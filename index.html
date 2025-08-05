@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="LINTERS/styles.css" />
+  <title>Formulario HTML</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario Sena</h1>
+
+    <form id="miFormulario">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          placeholder="Por favor escribir nombre..."
+          autofocus
+          pattern="[A-za-z ]{3,40}" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Por favor escriba su email..." />
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Edad:</label>
+        <input 
+          type="number" 
+          id="quantity" 
+          name="quantity" 
+          min="1" 
+          max="100"
+          placeholder="Por favor escriba edad..." />
+      </div>
+
+      <div class="form-group">
+        <label>¿Planea comprar un carro los próximos 5 años?:</label>
+        <div class="inline-label">
+          <input type="radio" id="carroSi" name="carro" required />
+          <label for="carroSi">Sí</label>
+        </div>
+
+        <div class="inline-label">
+          <input type="radio" id="carroNo" name="carro" />
+          <label for="carroNo">No</label>
+        </div>
+
+        <div class="inline-label">
+          <input type="radio" id="carroTalvez" name="carro" />
+          <label for="carroTalvez">Tal vez</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="marcaCarro">¿Cuál es su marca de carros favorita?:</label>
+        <input
+          type="text"
+          id="marcaCarro"
+          name="marca"
+          required
+          placeholder="Por favor escriba la marca..."
+          pattern="[A-za-z ]{3,40}" />
+      </div>
+
+      <div class="form-group">
+        <label>¿Qué tipo de medio de transporte tienes?:</label>
+
+        <div class="inline-label">
+          <input type="radio" id="carro" name="transporte" required />
+          <label for="carro">Carro</label>
+        </div>
+
+        <div class="inline-label">
+          <input type="radio" id="barco" name="transporte" required />
+          <label for="barco">Barco</label>
+        </div>
+
+        <div class="inline-label">
+          <input type="radio" id="cicla" name="transporte" required />
+          <label for="cicla">Cicla</label>
+        </div>
+
+        <div class="inline-label">
+          <input type="radio" id="moto" name="transporte" required />
+          <label for="moto">Moto</label>
+        </div>
+
+        <div class="inline-label">
+          <input type="radio" id="avion" name="transporte" required />
+          <label for="avion">Avión</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea
+          id="comentarios"
+          name="comentarios"
+          rows="4"
+          placeholder="Cuéntanos algo más sobre ti (opcional)"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
