@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f3ff;
+  padding: 30px;
+  color: #2c2c2c;
+}
+
+.container {
+  background: #fff;
+  border-left: 10px solid #8e44ad;
+  padding: 25px 30px;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(142, 68, 173, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #8e44ad;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #d1c4e9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea {
+  resize: vertical;
+}
+
+.inline-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.inline-label input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #f06292; /* Color del radio button */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #4a90e2, #8e44ad, #f06292);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #f06292, #8e44ad, #4a90e2);
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #8e44ad;
+}
